@@ -41,28 +41,29 @@ print(wordList)
 # 
 #     The diameter of Earth is 12742 kilometers.
 
-# In[4]:
+# In[6]:
 
 
 planet = "Earth"
 diameter = 12742
 
 
-# In[5]:
+# In[8]:
 
 
-print(f'The diameter of {planet} is {diameter} kilometers')
+string = "The diameter of {} is {} kilometers"
+print (string.format(planet, diameter))
 
 
 # ** Given this nested list, use indexing to grab the word "hello" **
 
-# In[6]:
+# In[11]:
 
 
 lst = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
 
 
-# In[7]:
+# In[12]:
 
 
 lst[3][1][2]
@@ -70,13 +71,13 @@ lst[3][1][2]
 
 # ** Given this nested dictionary grab the word "hello". Be prepared, this will be annoying/tricky **
 
-# In[8]:
+# In[14]:
 
 
 d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
 
 
-# In[9]:
+# In[15]:
 
 
 d['k1'][3]['tricky'][3]['target'][3]
@@ -87,7 +88,7 @@ d['k1'][3]['tricky'][3]['target'][3]
 # In[10]:
 
 
-# Comment your answer here: a tuple is immutable while a list can be modified
+# Comment your answer here: a tuple is immutable while a list can be modified (mutable)
 
 
 # ** Create a function that grabs the email website domain from a string in the form: **
@@ -96,23 +97,24 @@ d['k1'][3]['tricky'][3]['target'][3]
 #     
 # **So for example, passing "user@domain.com" would return: domain.com**
 
-# In[13]:
+# In[17]:
 
 
 def domainGet(domain):
     domain = domain.split('@')
-    print(domain[1])
+    return domain[1]
 
 
-# In[14]:
+# In[19]:
 
 
-domainGet('user@domain.com')
+domain = domainGet('user@domain.com')
+print(domain)
 
 
 # ** Create a basic function that returns True if the word 'dog' is contained in the input string. Don't worry about edge cases like a punctuation being attached to the word dog, but do account for capitalization. **
 
-# In[15]:
+# In[20]:
 
 
 def findDog(string):
@@ -122,15 +124,15 @@ def findDog(string):
         return False
 
 
-# In[16]:
+# In[25]:
 
 
-findDog('Is there a dog here?')
+findDog('Is there a dog! here?')
 
 
 # ** Create a function that counts the number of times the word "dog" occurs in a string. Again ignore edge cases. **
 
-# In[17]:
+# In[27]:
 
 
 def countDog(string):
@@ -142,7 +144,7 @@ def countDog(string):
     return dogCount
 
 
-# In[18]:
+# In[29]:
 
 
 countDog('This dog runs faster than the other dog dude!')
@@ -156,13 +158,13 @@ countDog('This dog runs faster than the other dog dude!')
 # 
 #     ['soup','salad']
 
-# In[19]:
+# In[30]:
 
 
 seq = ['soup','dog','salad','cat','great']
 
 
-# In[20]:
+# In[31]:
 
 
 for word in filter(lambda x: x[0].lower() == 's', seq):
@@ -176,7 +178,7 @@ for word in filter(lambda x: x[0].lower() == 's', seq):
 #   and 80 inclusive, the result is "Small Ticket". If speed is 81 or more, the result is "Big    Ticket". Unless it is your birthday (encoded as a boolean value in the parameters of the function) -- on your birthday, your speed can be 5 higher in all 
 #   cases. **
 
-# In[21]:
+# In[32]:
 
 
 def caught_speeding(speed, is_birthday):
@@ -189,13 +191,13 @@ def caught_speeding(speed, is_birthday):
     pass
 
 
-# In[22]:
+# In[36]:
 
 
 caught_speeding(81,True)
 
 
-# In[23]:
+# In[34]:
 
 
 caught_speeding(81,False)
