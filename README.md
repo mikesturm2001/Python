@@ -2,13 +2,17 @@
 <h1>Various Python Projects</h1>
 
 <h4>Baseball</h4>
-Analysis of baseball stasticistics over a century
+
 <ul>
+  <li>Analysis of baseball stasticistics over a century</li>
   <li>using pandas and dataframes to show insights and answer questions</li>
 </ul>
   
 <h4>Basics</h4>
-Demopnstration of basic python
+
+<ul>
+  <li>Demopnstration of basic python</li>
+</ul>
 
 <h4>Google Project</h4>
 
