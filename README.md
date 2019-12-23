@@ -18,5 +18,16 @@
 
 <h4>Google Project</h4>
 
-This project takes a look at google analytics information for a webiste and attempts to look for correlations in the data
+This project takes a look at google analytics information for an ecommerce webiste and attempts to look for correlations in the data.
+
+Goal is to predict the total transaction revenue.
+
+Classification used to predict revenue. 
+
+<ul>
+  <li>Simple Linear Regressions</li>
+  <li>Gaussian Naive Bayes</li>
+  <li>Principal Component Analysis</li>
+  <li>Gaussian Mixture Models</li>
+</ul>
 
