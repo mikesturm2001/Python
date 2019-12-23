@@ -16,3 +16,7 @@
   <li>Bar charts</li>
 </ul>
 
+<h4>Google Project</h4>
+
+This project takes a look at google analytics information for a webiste and attempts to look for correlations in the data
+
